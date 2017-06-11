@@ -36,7 +36,7 @@
 				<version>2.12.4</version>
 				<configuration>
 					<systemPropertyVariables>
-						<propertyName>{EnvType}</propertyName>
+						<propertyName>${EnvType}</propertyName>
 					</systemPropertyVariables>
 					<groups>${GroupName}</groups>
 					<testFailureIgnore>true</testFailureIgnore>

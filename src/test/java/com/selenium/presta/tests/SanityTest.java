@@ -21,14 +21,14 @@ public SeleniumEasyAccount easyaccount;
 		easyaccount=new SeleniumEasyAccount();
 	}
 
-	@Test(priority = 1,testName = "login_Positive", description = "login_Positive", timeOut = 190000, enabled = false, groups = {
+	@Test(priority = 1,testName = "login_Positive", description = "login_Positive", timeOut = 190000, enabled = true, groups = {
 			"presta", "1" })
 	public void alogin_Positive() {
 		Assert.assertTrue(true);
 
 	}
 
-	@Test(priority = 2,testName = "login_Negative", description = "login_Negative", timeOut = 190000, enabled =false, groups = {
+	@Test(priority = 2,testName = "login_Negative", description = "login_Negative", timeOut = 190000, enabled =true, groups = {
 			"presta", "2" })
 	public void login_Negative() throws InterruptedException {
 
@@ -42,7 +42,7 @@ public SeleniumEasyAccount easyaccount;
 		CommonCode.wait(5);
 	}
 
-	 @Test(priority = 3, testName = "Searchproduct", description = "Searching for product", enabled = false, groups = {"presta", "3" })
+	 @Test(priority = 3, testName = "Searchproduct", description = "Searching for product", enabled = true, groups = {"presta", "3" })
 		public void Searchproduct() throws InterruptedException {
 			 //Commoncode.wait(1);
 			Reporter.log("Executing Second Test Case..!!", true);
