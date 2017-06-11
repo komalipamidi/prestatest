@@ -1,0 +1,8 @@
+com\selenium\presta\Configuration.class
+com\selenium\presta\CommonCode.class
+com\selenium\presta\ReadExcel.class
+com\selenium\presta\MyAccount.class
+com\selenium\presta\LoginPage.class
+com\selenium\presta\Home.class
+com\selenium\presta\Elements.class
+com\selenium\presta\SeleniumEasyAccount.class

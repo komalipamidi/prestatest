@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <groups>
+      <run>
+        <include name="seleniumesay"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.selenium.presta.tests.SanityTest">
+        <methods>
+          <include name="LogintoApp"/>
+          <include name="HomePage"/>
+          <include name="test1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.selenium.presta.tests.SanityTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
