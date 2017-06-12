@@ -58,7 +58,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Command_line_suite">
-                    <span>2 groups</span>
+                    <span>4 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,10 +101,29 @@
                     <div class="method-list-content failed suite-Command_line_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.selenium.presta.tests.SanityTest" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.selenium.presta.tests.SanityTest" hash-for-method="login_Negative">login_Negative</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Command_line_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.selenium.presta.tests.SanityTest" hash-for-method="Searchproduct">Searchproduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.selenium.presta.tests.SanityTest" hash-for-method="alogin_Positive">alogin_Positive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Command_line_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -124,70 +143,104 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test1">
-                  </a> <!-- test1 -->
-                  <span class="method-name">test1</span>
-                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [true] but found [false]
-	at com.selenium.presta.MyAccount.test1(MyAccount.java:380)
-	at com.selenium.presta.tests.SanityTest.test1(SanityTest.java:112)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-... Removed 29 stack frames<br/> java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.selenium.presta.MyAccount.test1(MyAccount.java:380)
-	at com.selenium.presta.tests.SanityTest.test1(SanityTest.java:112)
+                  <a name="login_Negative">
+                  </a> <!-- login_Negative -->
+                  <span class="method-name">login_Negative</span>
+                  <div class="stack-trace"><b>"org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 23 milliseconds
+Build info: version: &apos;2.32.0&apos;, revision: &apos;6c40c187d01409a5dc3b7f8251859150c8af0bcb&apos;, time: &apos;2013-04-09 10:39:28&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\Komali\AppData\Local\Temp\scoped_dir3448_11084}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 3e684e0e605e39334bad97747556794b
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:41)
+	at com.sun.proxy.$Proxy6.click(Unknown Source)
+	at com.selenium.presta.Home.LogOut(Home.java:39)
+	at com.selenium.presta.tests.SanityTest.login_Negative(SanityTest.java:36)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 15 stack frames<br/> org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 23 milliseconds
+Build info: version: &apos;2.32.0&apos;, revision: &apos;6c40c187d01409a5dc3b7f8251859150c8af0bcb&apos;, time: &apos;2013-04-09 10:39:28&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\Komali\AppData\Local\Temp\scoped_dir3448_11084}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 3e684e0e605e39334bad97747556794b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:41)
+	at com.sun.proxy.$Proxy6.click(Unknown Source)
+	at com.selenium.presta.Home.LogOut(Home.java:39)
+	at com.selenium.presta.tests.SanityTest.login_Negative(SanityTest.java:36)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertTrue(Assert.java:42)<br>org.testng.Assert.assertTrue(Assert.java:52)<br>com.selenium.presta.MyAccount.test1(MyAccount.java:380)<br>com.selenium.presta.tests.SanityTest.test1(SanityTest.java:112)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)<br>org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)<br>org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)<br>
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+"</b><br>sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br>sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br>sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br>java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br>org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)<br>org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)<br>org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)<br>org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)<br>org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:41)<br>com.sun.proxy.$Proxy6.click(Unknown Source)<br>com.selenium.presta.Home.LogOut(Home.java:39)<br>com.selenium.presta.tests.SanityTest.login_Negative(SanityTest.java:36)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)<br>org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)<br>java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)<br>java.util.concurrent.FutureTask.run(FutureTask.java:266)<br>java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)<br>java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)<br>java.lang.Thread.run(Thread.java:745)<br>
 </div> <!-- stack-trace -->
                   <em>
-(test 1 in selenium easy)                  </em>
+(login_Negative)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.selenium.presta.tests.SanityTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Searchproduct">
+                  </a> <!-- Searchproduct -->
+                  <span class="method-name">Searchproduct</span>
+                  <em>
+(Searching for product)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="alogin_Positive">
+                  </a> <!-- alogin_Positive -->
+                  <span class="method-name">alogin_Positive</span>
+                  <em>
+(login_Positive)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
         </div> <!-- panel Command_line_suite -->
         <div panel-name="test-xml-Command_line_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -198,16 +251,6 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite verbose=&quot;0&quot; name=&quot;Command line suite&quot;&gt;
   &lt;test name=&quot;Command line test&quot; preserve-order=&quot;false&quot;&gt;
-    &lt;method-selectors&gt;
-      &lt;method-selector&gt;
-        &lt;selector-class name=&quot;org.apache.maven.surefire.testng.utils.GroupMatcherMethodSelector&quot; priority=&quot;9999&quot;/&gt;
-      &lt;/method-selector&gt;
-    &lt;/method-selectors&gt;
-    &lt;groups&gt;
-      &lt;run&gt;
-        &lt;include name=&quot;seleniumesay&quot;/&gt;
-      &lt;/run&gt;
-    &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.selenium.presta.tests.SanityTest&quot;/&gt;
       &lt;class name=&quot;com.selenium.presta.tests.TestngAnnotationsTest&quot;/&gt;
@@ -238,15 +281,39 @@
               <span class="test-group-name">1</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">test1</span>
+                <span class="method-in-group-name">alogin_Positive</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
             <div class="test-group">
-              <span class="test-group-name">seleniumesay</span>
+              <span class="test-group-name">2</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">test1</span>
+                <span class="method-in-group-name">login_Negative</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">3</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">Searchproduct</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">presta</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">Searchproduct</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">alogin_Positive</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">login_Negative</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -266,16 +333,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test1')
+data.setCell(0, 1, 'Searchproduct')
 data.setCell(0, 2, 'com.selenium.presta.tests.SanityTest')
-data.setCell(0, 3, 6966);
+data.setCell(0, 3, 17368);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'login_Negative')
+data.setCell(1, 2, 'com.selenium.presta.tests.SanityTest')
+data.setCell(1, 3, 103);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'alogin_Positive')
+data.setCell(2, 2, 'com.selenium.presta.tests.SanityTest')
+data.setCell(2, 3, 24);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -287,41 +362,24 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">test1</span>
+              <span class="reporter-method-name">Searchproduct</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Executing nineth test case..!</span>
+                <span class="reporter-method-output">Executing Second Test Case..!!</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">login_Negative</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test case 2 is running...!</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Command_line_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">11 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.selenium.presta.tests.SanityTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">AddToCart</span>
-                <br/>
-                <span class="ignored-method-name">Searchproduct</span>
-                <br/>
-                <span class="ignored-method-name">alogin_Positive</span>
-                <br/>
-                <span class="ignored-method-name">CartShipping</span>
-                <br/>
-                <span class="ignored-method-name">CartPayment</span>
-                <br/>
-                <span class="ignored-method-name">Cartsubmit</span>
-                <br/>
-                <span class="ignored-method-name">DeleteFromCart</span>
-                <br/>
-                <span class="ignored-method-name">CartAdress</span>
-                <br/>
-                <span class="ignored-method-name">login_Negative</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.selenium.presta.tests.TestngAnnotationsTest</span>
               <div class="ignored-methods-div">
@@ -345,20 +403,34 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">test1</span>
-                <span class="method-start">12566 ms</span>
+                <span class="method-name">alogin_Positive</span>
+                <span class="method-start">10648 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
+                <span class="method-name">HomePage</span>
+                <span class="method-start">10672 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
+                <span class="method-name">login_Negative</span>
+                <span class="method-start">12453 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
                 <span class="method-name">HomePage</span>
-                <span class="method-start">19536 ms</span>
+                <span class="method-start">12564 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Searchproduct</span>
+                <span class="method-start">14619 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">HomePage</span>
+                <span class="method-start">31987 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">19798 ms</span>
+                <span class="method-start">33886 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
