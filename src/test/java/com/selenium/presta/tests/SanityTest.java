@@ -83,28 +83,7 @@ public SeleniumEasyAccount easyaccount;
 		 account.cartShipping();  
 	 
 }
-	 @Test(priority = 8, testName = "Cartpayment", description = "Cart payment options", enabled = false, groups = {"presta", "8" })
-		public void CartPayment() throws InterruptedException {
-		 Reporter.log("Executing seventh test case..!",true);
-		 account.searchItem();
-		 account.addToCart();
-		 account.cartAdress(); 
-		 account.cartShipping();
-		 account.cartpayment();  
-
-	 }
 	 
-	 @Test(priority = 9, testName = "Cartsubmit", description = "Cart order submit detials", enabled =false, groups = {"presta", "9" })
-		public void Cartsubmit() throws InterruptedException {
-		 Reporter.log("Executing eight test case..!",true);
-		 account.searchItem();
-		 account.addToCart();
-		 account.cartAdress(); 
-		 account.cartShipping();
-		 account.cartpayment();  
-		account.cartsubmit();
-		 
-}
 
 /*
  
