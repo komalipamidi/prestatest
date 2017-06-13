@@ -51,7 +51,7 @@ public SeleniumEasyAccount easyaccount;
 			
 			
 		}
-	 @Test(priority = 4, testName = "AddToCart", description = "adding the item to cart", enabled = false, groups = {"presta", "4" })
+	 @Test(priority = 4, testName = "AddToCart", description = "adding the item to cart", enabled = true, groups = {"presta", "4" })
 		public void AddToCart() throws InterruptedException {
 		 Reporter.log("Executing third test case..!",true);
 		 account.searchItem();
@@ -59,7 +59,7 @@ public SeleniumEasyAccount easyaccount;
 	 }
 	 
 	 
-	 @Test(priority = 5, testName = "DeleteFromCart", description = "deleting the item from cart", enabled = false, groups = {"presta", "5" })
+	 @Test(priority = 5, testName = "DeleteFromCart", description = "deleting the item from cart", enabled = true, groups = {"presta", "5" })
 		public void DeleteFromCart() throws InterruptedException {
 		 Reporter.log("Executing fourth test case..!",true);
 		 account.searchItem();
@@ -67,14 +67,14 @@ public SeleniumEasyAccount easyaccount;
 		 account.deleteCartItem();
 }
 
-	 @Test(priority = 6, testName = "CartAdress", description = "Cartadress", enabled = false, groups = {"presta", "6" })
+	 @Test(priority = 6, testName = "CartAdress", description = "Cartadress", enabled = true, groups = {"presta", "6" })
 		public void CartAdress() throws InterruptedException {
 		 Reporter.log("Executing fifth test case..!",true);
 		 account.searchItem();
 		 account.addToCart();
 		 account.cartAdress(); 
 }
-	 @Test(priority = 7, testName = "Cartshipping", description = "Cart shipping details", enabled = false, groups = {"presta", "7" })
+	 @Test(priority = 7, testName = "Cartshipping", description = "Cart shipping details", enabled = true, groups = {"presta", "7" })
 		public void CartShipping() throws InterruptedException {
 		 Reporter.log("Executing sixth test case..!",true);
 		 account.searchItem();
